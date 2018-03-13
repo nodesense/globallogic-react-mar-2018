@@ -7,7 +7,11 @@
 - Install Visual Studio Code latest
 
 > git clone https://github.com/nodesense/globallogic-react-mar-2018
+
+
 > cd globallogic-react-mar-2018
+
+
 > npm install
 
 > npm start

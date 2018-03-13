@@ -1,26 +1,13 @@
-class Counter {
-    test() {
-      this.count  = 100;
-      
-       let add = (a, b) => {
-           console.log(" add ");
-         function start() {
-          setInterval( () => {
-                 console.log("Timer ");
-                 this.count++;  
-                 console.log("Counter", this.count);
- 
-          }, 2000);
+"use strict";
 
-          start();
-       };
+function getName() {
+   return this.name;
+}
 
-       add(10, 20);
-    }
-    
- }
- }
+//global 
+name = 'React';
 
- c = new Counter();
- console.log("test");
- c.test();
+//console.log(global == this);
+
+//console.log(getName());
+console.log(getName.apply());

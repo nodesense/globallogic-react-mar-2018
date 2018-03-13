@@ -10,6 +10,11 @@ export default class Header extends Component {
         super(props);
         console.log("Header cons", props);
     }
+
+    //ES next  static variable inside class
+    static propTypes = {
+        title: PropTypes.string.isRequired
+    }
      
     
     render() {
@@ -26,13 +31,4 @@ export default class Header extends Component {
         )
     }
 } 
-
-// keywords
-Header.defaultProps = {
-    
-}
-
-// keywords
-Header.propTypes = {
-    
-}
+ 

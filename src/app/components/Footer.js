@@ -20,9 +20,19 @@ export default function Footer(props) {
 
 
 Footer.defaultProps = {
-    
+    company: 'Global Logic India Pvt Ltd'
 }
 
 Footer.propTypes = {
+    // mandatory
+    year: PropTypes.number.isRequired, 
+    // optional
+    company: PropTypes.string,
+
+    //address: PropTypes.object
+
+    address : PropTypes.shape({
+        city: PropTypes.string.isRequired
+    }).isRequired
     
 }
